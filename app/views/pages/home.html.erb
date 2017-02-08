@@ -1,6 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<link href='//fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
 
-<%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
-<% end %>
+<style>
+  .header-text{
+    font-family:Londrina Solid;
+    color:red;
+    font-size:30px;
+  }
+</style>
+
+<h1 class="header-text">SMS app </h1>
+<form action="/submit">
+  <input type="text" required placeholder="enter phone number">
+  <button type="submit">Submit </button>
+</form>
